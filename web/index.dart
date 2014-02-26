@@ -4,7 +4,7 @@ import 'package:angular/angular.dart';
 import 'package:logging/logging.dart';
 //import 'package:perf_api/perf_api.dart';
 
-import "package:angular_flow_type/ng_flow_type.dart";
+import "package:angular_flow_type/angular_flow_type.dart";
 
 @MirrorsUsed(
     targets: const [
