@@ -8,7 +8,7 @@ Directive for changing the font-size based on a specific element's width. It is 
 
 Import and register the module:
 
-    import "package:angular_flow_type/ng_flow_type.dart";
+    import "package:angular_flow_type/angular_flow_type.dart";
 
     class MyAppModule extends Module {
         MyAppModule() {
