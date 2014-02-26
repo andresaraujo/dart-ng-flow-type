@@ -1,7 +1,8 @@
 Flow Type for Angular.dart
 =================
+Directive for changing the font-size based on a specific element's width. It is based on [FlowType.js](https://github.com/simplefocus/FlowType.JS). See [demo](http://andresaraujo.github.io/dart-ng-flow-type/) (resize window)
 
-[FlowType.js](https://github.com/simplefocus/FlowType.JS) port for Angular.dart. See [demo](http://andresaraujo.github.io/dart-ng-flow-type/)
+ 
 
 ## Usage
 
