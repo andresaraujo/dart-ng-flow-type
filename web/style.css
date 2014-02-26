@@ -1,0 +1,28 @@
+body {
+  background: #eff3f3;
+  color: #2c3e50;
+  font-family: "adelle", Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 29px; 
+  text-align: center;
+}
+  
+h1, h2, h3, h4, h5, h6, p {
+  font-family: inherit;
+  font-size: inherit;
+  margin: 3% 0; }
+  
+h1, h2, h3, h4 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+h1 {
+  font-size: 3.7em;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 1em;
+  padding-bottom: 3%; }
+  
+.title-alt{
+  color: #EA4945;
+}

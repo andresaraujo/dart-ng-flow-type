@@ -1,0 +1,13 @@
+name:  angular_flow_type
+version: 0.0.1
+description: >
+  FlowType port for Angular.dart
+author: Andres Araujo <a.araujo.azua@gmail.com>
+homepage: https://github.com/andresaraujo/dart-ng-flow-type
+
+dependencies:
+  angular: any
+  browser: any
+  
+dev_dependencies: 
+  unittest: any
