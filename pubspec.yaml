@@ -6,8 +6,13 @@ author: Andres Araujo <a.araujo.azua@gmail.com>
 homepage: https://github.com/andresaraujo/dart-ng-flow-type
 
 dependencies:
-  angular: "0.9.8"
+  angular: ">=0.10.0"
+  di: '>=0.0.40'
+  shadow_dom: any
   
 dev_dependencies: 
   unittest: any
-  browser: ">=0.9.1 <0.9.2"
+  browser: any
+  
+transformers:
+- angular

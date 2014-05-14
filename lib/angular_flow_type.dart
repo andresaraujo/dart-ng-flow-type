@@ -1,7 +1,7 @@
 library angular_flow_type;
 
 import 'dart:async';
-import 'dart:html';
+import 'dart:html' as html;
 import 'package:angular/angular.dart';
 
 /**
@@ -11,7 +11,7 @@ import 'package:angular/angular.dart';
  *
  *  <div flow-type></div>
  */
-@NgDirective(selector: "[flow-type]",
+@Decorator(selector: "[flow-type]",
 map: const {
   'ft-min-font'   : '=>minFontSize',
   'ft-max-font'   : '=>maxFontSize',
@@ -20,9 +20,9 @@ map: const {
   'ft-font-ratio' : '=>fontRatio'
 })
 class FlowTypeDirective{
-  final Scope   _scope;
-  final Element _element;
-  final Window  _window;
+  //final Scope   _scope = null;
+  html.Element _element;
+  html.Window  _window = null;
   
   num minFontSize = 0;
   num maxFontSize = 9999;
@@ -30,7 +30,7 @@ class FlowTypeDirective{
   num minWidth    = 1;
   num fontRatio   = 35;
     
-  FlowTypeDirective(this._element, this._scope, this._window){
+  FlowTypeDirective(this._element, this._window){//this._element, this._scope, this._window){
     _window.onResize.listen((_) => resize());
     scheduleMicrotask(() {
         resize();
@@ -51,6 +51,6 @@ class FlowTypeDirective{
 /// Module which installs the flow-type directive
 class FlowTypeModule extends Module {
   FlowTypeModule() {
-    type(FlowTypeDirective);
+    bind(FlowTypeDirective);
   }
 }
